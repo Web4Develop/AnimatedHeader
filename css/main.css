@@ -1,0 +1,73 @@
+/* selector */
+:root {
+  --clrPrimary: rgb(50,50,50);
+  --clrSecondary: rgb(200,200,200);
+  --clrAccent: rgb(0,200,100);
+}
+
+/* globals */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  text-align: center;
+  padding: 2em;
+  background: var(--clrPrimary);
+  color: var(--clrSecondary);
+}
+
+p {
+  padding-top: 100px;
+}
+
+/* classes */
+/* form */
+.inputTitle {
+  display: block;
+}
+.formWrapper {
+  display: inline-block;
+}
+.formWrapper, .inputTitle {
+  padding: 2em;
+}
+.formButton {
+  word-spacing: 10em;
+}
+.formButton button {
+  font-size: 2em;
+  padding: 1em;
+}
+.resetButton:hover {
+  background: var(--clrAccent);
+}
+
+.submitButton:hover {
+  background: rgb(0,200,255);
+}
+
+
+/* navigation */
+.active {
+  color: var(--clrAccent);
+}
+
+.nav {
+  word-spacing: 5em;
+  font-size: 1.3em;
+  padding-top: 100px;
+}
+.nav li, .nav a {
+  list-style: none;
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 2s ease;
+  color: var(--clrSecondary);
+}
+.nav a:hover {
+  color: var(--clrAccent);
+  transform: scale(3) rotate(360deg);
+}

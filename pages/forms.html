@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title> Codecademy Javascript </title>
+  <link rel='stylesheet' type='text/css' media='screen' href='./css/main.css'>
+</head>
+
+<body>
+
+  <!-- / first form -->
+  <!-- <section>
+    <form method="POST" action="form.aspx">
+
+      <p>
+        <label> Customer Name: </label>
+        <input type="text" id="customerName" name="customerName" maxlength="30" placeholder="Name...">
+      </p>
+
+      <fieldset>
+        <legend>
+          Pizza Sizes
+        </legend>
+        <p>
+          <label> <input type="radio" name="size" value="small"> Small (10in) </label>
+        </p>
+        <p>
+          <label> <input type="radio" name="size" value="meduim" checked> Medium (14in) </label>
+        </p>
+        <p>
+          <label> <input type="radio" name="size" value="large"> Large (18in) </label>
+        </p>
+
+        <fieldset>
+          <legend>
+            Pizza Toppings
+          </legend>
+          <p>
+            <label> <input type="checkbox" name="toppings" value="bacon"> Bacon </label>
+          </p>
+
+          <p>
+            <label> <input type="checkbox" name="toppings" value="cheese"> Extra Cheese </label>
+          </p>
+
+          <p>
+            <label> <input type="checkbox" name="toppings" value="Onion"> Onion </label>
+          </p>
+
+          <p>
+            <label> <input type="checkbox" name="toppings" value="Mushroom" checked> Mushroom </label>
+          </p>
+        </fieldset>
+
+        <p> Crust
+          <select name="crust" multiple>
+            <option value="c1"> Normal </option>
+            <option value="c2" selected> Deep Dish (+£2) </option>
+            <option value="c3"> Thin </option>
+          </select>
+        </p>
+
+        <p>
+          <label for="comments"> Delivery Instructions:</label>
+          <textarea name="comments" cols="50" rows="5" maxlength="1000"></textarea>
+
+        </p>
+
+        <p> <input type="submit" value="continue to step 2"> </p>
+        <p> <input type="reset" value="reset"> </p>
+
+      </fieldset>
+
+    </form>
+  </section> -->
+  <!-- / first form -->
+
+  <!-- second form -->
+  <section>
+    <h1> Creating Forms </h1>
+    <form method="POST" action="form.aspx">
+
+      <h2> Email </h2>
+      <p class="formWrapper">
+        <label>
+          <span class="inputTitle"> Email Input: </span>
+          <input type=" email" name="emailInput" required id="emailInput" autofocus autocomplete=""> </label>
+      </p>
+
+      <p class="formWrapper">
+        <label>
+          <span class="inputTitle"> Telephone Input: </span>
+          <input type=" tel" name="telephone" required id="telephone"> </label>
+      </p>
+
+      <p class="formWrapper">
+        <label>
+          <span class="inputTitle"> Url Input: </span>
+          <input type=" url" name="urlInput" required id="urlInput">
+        </label>
+      </p>
+
+      <p class="formWrapper">
+        <label>
+          <span class="inputTitle"> Number Input </span>
+          <input type="number" name="numberInput" id="numberInput" required>
+        </label>
+      </p>
+
+      <p>
+        <label>
+          <input type="range" name="range" required value="72" id="range">
+        </label>
+      </p>
+
+      <!-- datalist -->
+      <h2> Data Link</h2>
+      <p>
+        <label class="inputTitle">
+          <span> Data List: </span>
+          <input type="text" list="someList">
+          <datalist id="someList">
+            <option label="first" value="first"> </option>
+            <option label="second" value="second"> </option>
+            <option label="third" value="third"> </option>
+          </datalist>
+        </label>
+      </p>
+      <!-- / datalist -->
+
+      <h2> Attributes </h2>
+      <p>
+        <label class="inputTitle">
+          <span> autofocus: </span>
+          <input type="text" autofocus>
+        </label>
+      </p>
+
+      <!-- buttons -->
+      <p class="formButton">
+        <button class="resetButton" type="reset" name="reset" id="reset"> Reset </button>
+        <button class="submitButton" type="submit" name="submit" id="submit"> Submit </button>
+      </p>
+      <!-- / buttons -->
+
+    </form>
+  </section>
+  <!-- / second form -->
+
+  <script src='./js/main.js'></script>
+</body>
+
+</html>
